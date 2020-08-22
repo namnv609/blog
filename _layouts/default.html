@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="vi" class="no-js">
+  {% include head.html %}
+  <body>
+    {% include header_top.html %}
+    <div class="site-main-container">
+      <!-- Start latest-post Area -->
+      <section class="latest-post-area pb-50">
+        <div class="container no-padding">
+          <div class="row">
+            <div class="col-lg-8 post-list">
+              {{ content }}
+            </div>
+            {% include sidebar.html %}
+          </div>
+        </div>
+      </section>
+      <!-- End latest-post Area -->
+    </div>
+
+    <!-- start footer Area -->
+    {% include footer.html %}
+  </body>
+</html>

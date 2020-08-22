@@ -1,0 +1,38 @@
+<div class="col-lg-4">
+  <div class="sidebars-area">
+    <div class="single-sidebar-widget editors-pick-widget">
+      <h6 class="title">Editor's Pick</h6>
+      <div class="editors-pick-post">
+        <div class="post-lists">
+          {% assign editor_choice_posts = site.posts | where: "is_editor_choice", true %}
+          {% if editor_choice_posts.size > 0 %}
+            {% for post in editor_choice_posts %}
+              <div class="single-post d-flex flex-row">
+                <div class="thumb">
+                  <img src="{{ post.feature_image }}" alt="">
+                </div>
+                <div class="detail">
+                  <a href="{{ post.url }}">
+                    <h6>{{ post.title }}</h6>
+                  </a>
+                  <ul class="meta">
+                    <li>
+                      <span class="lnr lnr-user"></span>
+                      {{ post.author }}
+                    </li>
+                    <li>
+                      <span class="lnr lnr-calendar-full"></span>
+                      {{ post.date | date: "%d %b, %Y"}}
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            {% endfor %}
+          {% else %}
+            No Editor's pick post(s)
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

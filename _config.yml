@@ -1,0 +1,29 @@
+name: NamNV609's Blog
+email: your-email@example.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: ""
+url: ""
+twitter_username: jekyllrb
+github_username:  jekyll
+
+plugins:
+  - jekyll-feed
+
+# Social network
+social_networks:
+  facebook: "https://fb.com"
+  twitter: ""
+  github: ""
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      author: NamNV609
+      feature_image: /assets/img/no-img.png
+permalink: /:slugified_categories/:title:output_ext

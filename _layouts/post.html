@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<!-- Start single-post Area -->
+<div class="single-post-wrap">
+  <div class="feature-img-thumb relative">
+    <div class="overlay overlay-bg"></div>
+    <img class="img-fluid" src="{{ page.feature_image }}" alt="">
+  </div>
+  <div class="content-wrap">
+    <ul class="tags mt-10">
+      <li><a href="#">{{ page.category }}</a></li>
+    </ul>
+    <a href="#">
+      <h3>{{ page.title }}</h3>
+    </a>
+    <ul class="meta pb-20">
+      <li>
+        <span class="lnr lnr-user"></span>
+        {{ page.author }}
+      </li>
+      <li>
+        <span class="lnr lnr-calendar-full"></span>
+        {{ page.date | date: "%d %b, %Y"}}
+      </li>
+    </ul>
+    {{ content }}
+  </div>
+</div>
