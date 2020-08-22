@@ -26,4 +26,4 @@ defaults:
     values:
       author: NamNV609
       feature_image: /assets/img/no-img.png
-permalink: /:slugified_categories/:title:output_ext
+permalink: /:categories/:title:output_ext
